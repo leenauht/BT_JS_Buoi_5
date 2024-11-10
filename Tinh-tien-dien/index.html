@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tính tiền điện</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Tính tiền điện</h1>
+    <div class="container">
+      <input id="nameUser" type="text" placeholder="Nhập tên user" />
+      <input
+        id="numberKw"
+        type="number"
+        placeholder="Nhập số kw điện tiêu thụ"
+      />
+    </div>
+    <div class="btnCaculate">
+      <button onclick="handleElectricityBill()">Tính tiền điện</button>
+      <div id="divInform"></div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

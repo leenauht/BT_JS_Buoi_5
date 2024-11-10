@@ -1,0 +1,49 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+
+  .number {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    input {
+      font-size: 16px;
+      padding: 8px;
+    }
+  }
+
+  .candidateInformation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    select {
+      font-size: 16px;
+      padding: 8px;
+    }
+  }
+}
+
+.caculateAndResult {
+  text-align: center;
+  margin-top: 30px;
+
+  button {
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    background-color: rgb(26, 115, 232);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  p {
+    font-size: 20px;
+  }
+}

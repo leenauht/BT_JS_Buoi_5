@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tính thuế thu nhập cá nhân</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Tính thuế thu nhập cá nhân</h1>
+    <h3>Thông tin cá nhân</h3>
+    <div class="container">
+      <input id="nameUser" type="text" placeholder="Nhập họ và tên" />
+      <input id="grossIncome" type="number" placeholder="Tổng thu nhập năm" />
+      <input
+        id="numberOfDependent"
+        type="number"
+        placeholder="Số người phụ thuộc"
+      />
+    </div>
+    <div class="btnCaculate">
+      <button onclick="handlePresonalIncomeTax()">Tính thuế thu nhập</button>
+      <div id="divInform"></div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

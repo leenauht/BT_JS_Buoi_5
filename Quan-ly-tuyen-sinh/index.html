@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý tuyển sinh</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Quản lý tuyển sinh</h1>
+    <div class="container">
+      <div class="number">
+        <input id="passingScore" type="number" placeholder="Nhập điểm chuẩn" />
+        <input
+          id="point_1"
+          type="number"
+          placeholder="Nhập điểm môn thứ nhất"
+        />
+        <input id="point_2" type="number" placeholder="Nhập điểm môn thứ hai" />
+        <input id="point_3" type="number" placeholder="Nhập điểm môn thứ ba" />
+      </div>
+
+      <div class="candidateInformation">
+        <select id="area">
+          <option value="A">Khu vực A</option>
+          <option value="B">Khu vực B</option>
+          <option value="C">Khu vực C</option>
+          <option value="X">Khu vực X</option>
+        </select>
+        <select id="object">
+          <option value="0">Đối tượng 0</option>
+          <option value="1">Đối tượng 1</option>
+          <option value="2">Đối tượng 2</option>
+          <option value="3">Đối tượng 3</option>
+        </select>
+      </div>
+    </div>
+    <div class="caculateAndResult">
+      <button onclick="hanldeCaculateExamScore()">Tính điểm thi</button>
+      <div id="divResult"></div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

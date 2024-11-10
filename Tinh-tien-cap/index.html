@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tính tiền cáp</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1>Tính tiền cáp</h1>
+
+    <div class="container">
+      <input id="customerCode" type="text" placeholder="Nhập mã khách hàng" />
+      <select id="customerType" onchange="getCustomerType()">
+        <option value="Residential Packages">Nhà dân</option>
+        <option value="Business Packages">Doanh nghiệp</option>
+      </select>
+      <input id="numberOfConnection" type="number" placeholder="Số kết nối" />
+      <input
+        id="numberOfPermiumChannel"
+        type="number"
+        placeholder="Số kênh cao cấp"
+      />
+    </div>
+    <div class="btnCaculate">
+      <button onclick="handleBilling()">Tính hóa đơn</button>
+      <div id="divInform"></div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

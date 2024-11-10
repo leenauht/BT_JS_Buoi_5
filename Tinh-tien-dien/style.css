@@ -1,0 +1,32 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  input {
+    padding: 6px;
+  }
+}
+
+.btnCaculate {
+  text-align: center;
+  margin-top: 30px;
+  button {
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    background-color: rgb(26, 115, 232);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  p {
+    font-size: 20px;
+  }
+}
