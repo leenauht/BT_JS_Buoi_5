@@ -70,6 +70,10 @@ function handlePresonalIncomeTax() {
 
   let taxableIncome = 0;
   taxableIncome = grossIncome - 4 - 1.6 * numberOfDependent;
+  if (taxableIncome < 0) {
+    alert("Nhập lại tổng thu nhập năm!");
+    return;
+  }
 
   const paymentIncomeTax = handleTaxRateCheck(taxableIncome);
   let result = `<p>Thuế thu nhập cá nhân phải trả của ${nameUser} là: ${paymentIncomeTax.toFixed(
